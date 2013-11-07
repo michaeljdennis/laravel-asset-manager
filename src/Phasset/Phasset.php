@@ -1,27 +1,27 @@
 <?php namespace Phasset;
 
 class Phasset {
-	private static $cssFiles = array();	
-	private static $jsFiles = array();
+	private $cssFiles = array();	
+	private $jsFiles = array();
 
-	public static function add($source) {
+	public function add($source) {
 		if(pathinfo($source, PATHINFO_EXTENSION) == 'css') {
-			array_push(self::$cssFiles, $source);
+			array_push($this->cssFiles, $source);
 		} else if(pathinfo($source, PATHINFO_EXTENSION) == 'js') {
-			array_push(self::$jsFiles, $source);
+			array_push($this->jsFiles, $source);
 		}
 	}
 
-	public static function css() {
-		foreach(self::$cssFiles as $cssFile) {
+	public function css() {
+		foreach($this->cssFiles as $cssFile) {
 			echo <<<HTML
 <link media="all" type="text/css" rel="stylesheet" href="$cssFile">
 HTML;
 		}
 	}
 
-	public static function js() {
-		foreach(self::$jsFiles as $jsFile) {
+	public function js() {
+		foreach($this->jsFiles as $jsFile) {
 			echo <<<HTML
 <script src="$jsFile"></script>
 HTML;
