@@ -1,6 +1,6 @@
 {
-    "name": "michaeljdennis/laravel-asset-manager",
-    "description": "A simple asset manager for the Laravel PHP framework",
+    "name": "michaeljdennis/phasset",
+    "description": "A simple asset manager for PHP",
     "license": "MIT",
     "authors": [
         {
@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Asset\\": "src/"
+            "Phasset\\": "src/"
         }
     }
 }

@@ -1,6 +1,6 @@
-<?php namespace Asset;
+<?php namespace Phasset;
 
-class Asset {
+class Phasset {
 	private static $cssFiles = array();	
 	private static $jsFiles = array();
 
