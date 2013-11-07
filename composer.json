@@ -1,0 +1,20 @@
+{
+    "name": "michaeljdennis/laravel-asset-manager",
+    "description": "Asset manager",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Dennis",
+            "email": "michaeljdennis@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Asset": "src/"
+        }
+    }
+}
