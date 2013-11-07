@@ -16,6 +16,7 @@ class Phasset {
 		foreach($this->cssFiles as $cssFile) {
 			echo <<<HTML
 <link media="all" type="text/css" rel="stylesheet" href="$cssFile">
+
 HTML;
 		}
 	}
@@ -24,6 +25,7 @@ HTML;
 		foreach($this->jsFiles as $jsFile) {
 			echo <<<HTML
 <script src="$jsFile"></script>
+
 HTML;
 		}
 	}
