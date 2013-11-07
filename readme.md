@@ -6,15 +6,15 @@ A simple asset Library for PHP.
 
 ###Queue up styles and scripts
 ```
-Asset::add('styles.css');
-Asset::add('scripts.js');
+Phasset::add('styles.css');
+Phasset::add('scripts.js');
 ```
 
 ###Output CSS and JS
 ```
-Asset::css();
+Phasset::css();
 //<link media="all" type="text/css" rel="stylesheet" href="styles.css">
 
-Asset::js();
+Phasset::js();
 //<script src="scripts.js"></script>
 ```
