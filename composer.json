@@ -1,6 +1,7 @@
 {
     "name": "michaeljdennis/phasset",
-    "description": "A simple asset manager for PHP",
+    "description": "A simple PHP Asset Library.",
+    "keywords": ["asset", "assets"],
     "license": "MIT",
     "authors": [
         {
