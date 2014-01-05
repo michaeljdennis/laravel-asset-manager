@@ -4,6 +4,13 @@ A simple PHP Asset Library.
 
 ##Usage
 
+###Add dependency to composer.json file
+```
+"require": {
+	"michaeljdennis/phasset": "dev-master"
+}
+```
+
 ###Queue up styles and scripts
 ```
 Phasset::add('reset.css');
