@@ -18,13 +18,13 @@ Phasset::add('styles.css');
 Phasset::add('scripts.js');
 ```
 
-###Output link and script tags
+###Output link and script tags in a view file
 ```
-Phasset::css();
+<?php Phasset::css(); ?>
 //<link media="all" type="text/css" rel="stylesheet" href="reset.css">
 //<link media="all" type="text/css" rel="stylesheet" href="styles.css">
 
-Phasset::js();
+<?php Phasset::js(); ?>
 //<script src="scripts.js"></script>
 ```
 
