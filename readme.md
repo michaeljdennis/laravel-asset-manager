@@ -41,4 +41,4 @@ Add facade to the `facades` array in `/config/app.php`.
 'Phasset' => Phasset\Facades\Laravel\Phasset::class,
 ```
 ## ToDo
-PSR-4 autoloading.
+- [ ] PSR-4 autoloading.
