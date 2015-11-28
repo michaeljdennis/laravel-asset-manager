@@ -7,7 +7,7 @@ A simple PHP Asset Library.
 ### Add dependency to composer.json file
 ```
 "require": {
-	"michaeljdennis/phasset": "dev-master"
+	"michaeljdennis/phasset": "1.0.*"
 }
 ```
 
@@ -40,5 +40,6 @@ Add facade to the `facades` array in `/config/app.php`.
 ```
 'Phasset' => Phasset\Facades\Laravel\Phasset::class,
 ```
+
 ## ToDo
 - [ ] PSR-4 autoloading.
