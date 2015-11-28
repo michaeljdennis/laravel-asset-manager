@@ -1,11 +1,13 @@
-<?php namespace Phasset\Facades\Laravel;
+<?php
+
+namespace Phasset\Facades\Laravel;
 
 use Illuminate\Support\Facades\Facade;
 
-class Phasset extends Facade {
-
-	protected static function getFacadeAccessor() {
-		return 'phasset';
-	}
-
+class Phasset extends Facade
+{
+    protected static function getFacadeAccessor()
+    {
+        return 'phasset';
+    }
 }
