@@ -29,13 +29,13 @@ Phasset::add('scripts.js');
 ```
 
 ## Laravel
-Add service provider to the providers array in /config/app.php.
+Add service provider to the `providers` array in `/config/app.php`.
 
 ```
 Phasset\PhassetServiceProvider::class,
 ```
 
-Add facade to the facades array in /config/app.php.
+Add facade to the `facades` array in `/config/app.php`.
 
 ```
 'Phasset' => Phasset\Facades\Laravel\Phasset::class,
