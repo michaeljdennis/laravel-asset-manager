@@ -4,8 +4,8 @@ namespace Phasset;
 
 class Phasset
 {
-    private $cssFiles = array();
-    private $jsFiles = array();
+    private $cssFiles = [];
+    private $jsFiles = [];
 
     public function add($source)
     {
