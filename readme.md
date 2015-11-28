@@ -1,24 +1,24 @@
-##Phasset
+## Phasset
 
 A simple PHP Asset Library.
 
-##Usage
+## Usage
 
-###Add dependency to composer.json file
+### Add dependency to composer.json file
 ```
 "require": {
 	"michaeljdennis/phasset": "dev-master"
 }
 ```
 
-###Queue up styles and scripts
+### Queue up styles and scripts
 ```
 Phasset::add('reset.css');
 Phasset::add('styles.css');
 Phasset::add('scripts.js');
 ```
 
-###Output link and script tags in a view file
+### Output link and script tags in a view file
 ```
 <?php Phasset::css(); ?>
 //<link media="all" type="text/css" rel="stylesheet" href="reset.css">
@@ -28,17 +28,17 @@ Phasset::add('scripts.js');
 //<script src="scripts.js"></script>
 ```
 
-##Laravel
-Add service provider...
+## Laravel
+Add service provider to the providers array in /config/app.php.
 
 ```
-'Phasset\PhassetServiceProvider',
+Phasset\PhassetServiceProvider::class,
 ```
 
-and facade...
+Add facade to the facades array in /config/app.php.
 
 ```
-'Phasset' => 'Phasset\Facades\Laravel\Phasset',
+'Phasset' => Phasset\Facades\Laravel\Phasset::class,
 ```
-
-...to app/config/app.php
+## ToDo
+PSR-4 autoloading.
