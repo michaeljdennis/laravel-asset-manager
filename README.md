@@ -34,6 +34,8 @@ $phasset->js();
 
 ## Laravel
 
+### Configuration for Laravel < 5.5
+
 Add service provider to the `providers` array in `/config/app.php`.
 
 ```
@@ -45,6 +47,8 @@ Add facade to the `facades` array in `/config/app.php`.
 ```
 'Phasset' => Phasset\Facades\Laravel\Phasset::class,
 ```
+
+### Usage
 
 Use facade to access methods.
 
