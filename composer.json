@@ -17,5 +17,15 @@
         "psr-4": {
             "Phasset\\": "src/"
         }
-    }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Phasset\\PhassetServiceProvider"
+            ],
+            "aliases": {
+                "Phasset": "Phasset\\Facades\\Laravel\\Phasset"
+            }
+        }
+    },
 }
