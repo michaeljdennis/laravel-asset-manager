@@ -1,34 +1,39 @@
-## Phasset
+# Phasset
 
-A simple PHP Asset Library.
+A simple PHP asset library.
 
 ## Usage
 
-### Add dependency to composer.json file
+### Installation with Composer
+
 ```
-"require": {
-	"michaeljdennis/phasset": "1.0.*"
-}
+composer require michaeljdennis/phasset
 ```
 
 ### Queue up styles and scripts
+
 ```
-Phasset::add('reset.css');
-Phasset::add('styles.css');
-Phasset::add('scripts.js');
+use Phasset\Phasset;
+
+$phasset = new Phasset();
+$phasset->add('reset.css');
+$phasset->add('styles.css');
+$phasset->add('scripts.js');
 ```
 
 ### Output link and script tags in a view file
-```
-<?php Phasset::css(); ?>
-//<link media="all" type="text/css" rel="stylesheet" href="reset.css">
-//<link media="all" type="text/css" rel="stylesheet" href="styles.css">
 
-<?php Phasset::js(); ?>
-//<script src="scripts.js"></script>
+```
+$phasset->css();
+// <link media="all" type="text/css" rel="stylesheet" href="reset.css">
+// <link media="all" type="text/css" rel="stylesheet" href="styles.css">
+
+$phasset->js();
+// <script src="scripts.js"></script>
 ```
 
 ## Laravel
+
 Add service provider to the `providers` array in `/config/app.php`.
 
 ```
@@ -41,5 +46,17 @@ Add facade to the `facades` array in `/config/app.php`.
 'Phasset' => Phasset\Facades\Laravel\Phasset::class,
 ```
 
-## ToDo
-- [ ] PSR-4 autoloading.
+Use facade to access methods.
+
+```
+Phasset::add('reset.css');
+Phasset::add('styles.css');
+Phasset::add('scripts.js');
+
+Phasset::css();
+Phasset::js();
+```
+
+## To Do
+
+- [x] PSR-4 autoloading.
